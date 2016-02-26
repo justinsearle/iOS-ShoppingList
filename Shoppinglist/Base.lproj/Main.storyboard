@@ -43,13 +43,13 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="229" y="584" width="159" height="65"/>
+                                    <rect key="frame" x="229" y="589" width="159" height="65"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phZ-Nm-zfP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB5-s5-V2f">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB5-s5-V2f">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -61,20 +61,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QN7-EV-mcp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enO-tQ-0eC">
-                                <rect key="frame" x="374" y="515" width="206" height="65"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <state key="normal" title="&gt;">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="336" y="197" width="52" height="53"/>
-                                </variation>
-                                <connections>
-                                    <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ft1-w8-oip"/>
+                                    <action selector="decrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aw4-wk-Pjx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Shopping List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyH-Rw-1SQ">
@@ -105,6 +92,17 @@
                                     <rect key="frame" x="301" y="213" width="42" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBj-UM-exz">
+                                <rect key="frame" x="20" y="515" width="206" height="65"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="589" width="167" height="65"/>
+                                </variation>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PK-GY-FOE">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -113,7 +111,7 @@
                                     <rect key="frame" x="14" y="209" width="188" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59V-c2-lKa">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59V-c2-lKa">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -125,9 +123,10 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ib5-wk-UFR"/>
+                                    <action selector="decrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIt-6V-GXa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kk-Gp-Mv4">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kk-Gp-Mv4">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -139,6 +138,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2e-S5-zsd"/>
+                                    <action selector="increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Lg-zr-FYR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="men-FD-E9w">
@@ -158,7 +158,7 @@
                                     <rect key="frame" x="14" y="286" width="188" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-AH-izZ">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-AH-izZ">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -170,9 +170,10 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GJc-nD-V7S"/>
+                                    <action selector="decrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bH-vz-0dJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzs-rC-ZLO">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzs-rC-ZLO">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -184,6 +185,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IkY-3H-F3p"/>
+                                    <action selector="increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwQ-vD-YcA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlH-WJ-z0E">
@@ -203,7 +205,7 @@
                                     <rect key="frame" x="14" y="361" width="188" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fel-ls-bMZ">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fel-ls-bMZ">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -215,9 +217,10 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWn-03-1Hy"/>
+                                    <action selector="decrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNq-Ur-fF8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrN-H3-714">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrN-H3-714">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -229,6 +232,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="olv-SQ-WqN"/>
+                                    <action selector="increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y02-PR-JXd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQ3-Hh-dZQ">
@@ -248,7 +252,7 @@
                                     <rect key="frame" x="14" y="440" width="188" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vf-dR-XCl">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vf-dR-XCl">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -256,13 +260,14 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="229" y="504" width="52" height="53"/>
+                                    <rect key="frame" x="229" y="507" width="52" height="53"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dR1-u3-Weq"/>
+                                    <action selector="decrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rpe-td-qcT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd8-Ez-mMC">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd8-Ez-mMC">
                                 <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -270,10 +275,11 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="336" y="504" width="52" height="53"/>
+                                    <rect key="frame" x="336" y="507" width="52" height="53"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9P-I1-ewM"/>
+                                    <action selector="increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7oP-3Z-hBu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAO-Sj-di1">
@@ -282,7 +288,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="301" y="520" width="42" height="21"/>
+                                    <rect key="frame" x="301" y="523" width="42" height="21"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZf-s8-gtC">
@@ -290,7 +296,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="516" width="188" height="30"/>
+                                    <rect key="frame" x="14" y="519" width="188" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X77-IK-ndd">
@@ -301,23 +307,26 @@
                                     <rect key="frame" x="14" y="111" width="366" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBj-UM-exz">
-                                <rect key="frame" x="20" y="515" width="206" height="65"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enO-tQ-0eC">
+                                <rect key="frame" x="374" y="515" width="206" height="65"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <state key="normal" title="Save">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="&gt;">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="584" width="167" height="65"/>
+                                    <rect key="frame" x="336" y="197" width="52" height="53"/>
                                 </variation>
+                                <connections>
+                                    <action selector="buttonCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ft1-w8-oip"/>
+                                    <action selector="increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bhe-9P-JUx"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97392424738219896" green="0.97392424738219896" blue="0.97392424738219896" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="MB5-s5-V2f"/>
-                                <exclude reference="enO-tQ-0eC"/>
                                 <exclude reference="6PK-GY-FOE"/>
                                 <exclude reference="59V-c2-lKa"/>
                                 <exclude reference="7kk-Gp-Mv4"/>
@@ -336,12 +345,12 @@
                                 <exclude reference="CAO-Sj-di1"/>
                                 <exclude reference="HZf-s8-gtC"/>
                                 <exclude reference="X77-IK-ndd"/>
+                                <exclude reference="enO-tQ-0eC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="MB5-s5-V2f"/>
-                                <include reference="enO-tQ-0eC"/>
                                 <include reference="6PK-GY-FOE"/>
                                 <include reference="59V-c2-lKa"/>
                                 <include reference="7kk-Gp-Mv4"/>
@@ -360,9 +369,23 @@
                                 <include reference="CAO-Sj-di1"/>
                                 <include reference="HZf-s8-gtC"/>
                                 <include reference="X77-IK-ndd"/>
+                                <include reference="enO-tQ-0eC"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="item1" destination="6PK-GY-FOE" id="v4N-y7-UkO"/>
+                        <outlet property="item2" destination="P8P-qt-GLR" id="5qb-kF-E8w"/>
+                        <outlet property="item3" destination="evD-H7-E4C" id="d9e-mr-e0H"/>
+                        <outlet property="item4" destination="GnR-aV-bDP" id="BzI-uD-AaC"/>
+                        <outlet property="item5" destination="HZf-s8-gtC" id="bet-Tn-dwj"/>
+                        <outlet property="num1" destination="E7i-0X-Cg7" id="u66-3f-ndo"/>
+                        <outlet property="num2" destination="men-FD-E9w" id="7gf-rz-KFW"/>
+                        <outlet property="num3" destination="ZlH-WJ-z0E" id="2cd-Du-F7J"/>
+                        <outlet property="num4" destination="DQ3-Hh-dZQ" id="d0y-Cz-VXn"/>
+                        <outlet property="num5" destination="CAO-Sj-di1" id="Q5T-I8-Edc"/>
+                        <outlet property="shoppingListName" destination="X77-IK-ndd" id="Y19-bU-drU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
