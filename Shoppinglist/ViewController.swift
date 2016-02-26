@@ -28,29 +28,67 @@ class ViewController: UIViewController {
     @IBOutlet weak var num4: UILabel!
     @IBOutlet weak var num5: UILabel!
 
+    //increment item numbers
     @IBAction func increment(sender: AnyObject) {
         let tag:Int? = Int(sender.tag)
         
         if (tag == 1) {
-            let num:Int? = Int(item1.text!)
-            if (num >= 0) {
+            var num:Int? = Int(num1.text!)
+            num = num! + 1
+            num1.text = "\(num!)"
         }
         else if (tag == 2) {
-            
+            var num:Int? = Int(num2.text!)
+            num = num! + 1
+            num2.text = "\(num!)"
         }
         else if (tag == 3) {
-            
+            var num:Int? = Int(num3.text!)
+            num = num! + 1
+            num3.text = "\(num!)"
         }
         else if (tag == 4) {
-            
+            var num:Int? = Int(num4.text!)
+            num = num! + 1
+            num4.text = "\(num!)"
         }
         else if (tag == 5) {
-            
+            var num:Int? = Int(num5.text!)
+            num = num! + 1
+            num5.text = "\(num!)"
         }
+ 
     }
     
+    //decrement item numbers
     @IBAction func decrement(sender: AnyObject) {
-        item2.text="4"
+        let tag:Int? = Int(sender.tag)
+        
+        if (tag == 1) {
+            var num:Int? = Int(num1.text!)
+            num = num! - 1
+            num1.text = "\(num!)"
+        }
+        else if (tag == 2) {
+            var num:Int? = Int(num2.text!)
+            num = num! - 1
+            num2.text = "\(num!)"
+        }
+        else if (tag == 3) {
+            var num:Int? = Int(num3.text!)
+            num = num! - 1
+            num3.text = "\(num!)"
+        }
+        else if (tag == 4) {
+            var num:Int? = Int(num4.text!)
+            num = num! - 1
+            num4.text = "\(num!)"
+        }
+        else if (tag == 5) {
+            var num:Int? = Int(num5.text!)
+            num = num! - 1
+            num5.text = "\(num!)"
+        }
     }
     
     //Reset the shopping list
